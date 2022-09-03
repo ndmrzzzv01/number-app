@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NumberApplication</string>
+    <string name="find_the_fact">Find the fact!</string>
+    <string name="generate_fact">Generate fact!</string>
+    <string name="write_your_number">Write your number!</string>
+    <string name="information_about_your_number">Information about your number</string>
+    <string name="number">Number</string>
+</resources>
