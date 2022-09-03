@@ -35,7 +35,8 @@ class NumberViewModel : ViewModel() {
                     number = fact.number,
                     info = fact.info
                 )
-                databaseRepository.insertFactToDatabase(factEntity)
+                val id = databaseRepository.insertFactToDatabase(factEntity)
+                factEntity.id = id?.toInt() ?: 0
                 lastFact.value = factEntity
                 result.value = fact.info
             }
@@ -49,7 +50,8 @@ class NumberViewModel : ViewModel() {
                 number = fact.number,
                 info = fact.info
             )
-            databaseRepository.insertFactToDatabase(factEntity)
+            val id = databaseRepository.insertFactToDatabase(factEntity)
+            factEntity.id = id?.toInt() ?: 0
             lastFact.value = factEntity
             result.value = fact.info
             inputNumber.value = fact.number

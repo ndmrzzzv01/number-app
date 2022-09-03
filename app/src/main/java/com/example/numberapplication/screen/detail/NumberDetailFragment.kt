@@ -41,9 +41,12 @@ class NumberDetailFragment : Fragment() {
         binding.viewModel = viewModel
         binding.lifecycleOwner = this
 
-        viewModel.getFactAboutNumber(id ?: 0)
-
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel.getFactAboutNumber(id ?: 0)
     }
 
 }

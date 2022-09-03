@@ -5,6 +5,7 @@ import androidx.room.Insert
 import androidx.room.Query
 import com.example.numberapplication.database.data.FactEntity
 import com.example.numberapplication.network.data.Fact
+import java.nio.LongBuffer
 
 @Dao
 interface FactsDao {
@@ -16,6 +17,6 @@ interface FactsDao {
     suspend fun getFact(id: Int): FactEntity?
 
     @Insert
-    suspend fun insertFactToDatabase(fact: FactEntity)
+    suspend fun insertFactToDatabase(fact: FactEntity): Long
 
 }
