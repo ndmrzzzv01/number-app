@@ -12,3 +12,14 @@ It's simple: enter a number and get a fact or generate a random number with its 
 - Material Theme
 - LiveData
 - ViewModel
+
+## Application
+
+### Main Screen
+<img src="utils/Screenshot_1.png" width="30%" alt="Main Screen" />
+
+### Generated Fact About Number Screen
+<img src="utils/Screenshot_2.png" width="30%" alt="Generated Fact About Number Screen" />
+
+### Detail Info About Number Screen
+<img src="utils/Screenshot_3.png" width="30%" alt="Detail Info About Number Screen" />
